@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Draw  my  Drawing  </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+<body>
+
+<script>
+    $(document).ready(function(){
+        $("#indication").click(function(){
+            $("#popup-index").css({"transform" : "scale(1)", "transition" : "transform 250ms ease-in-out"});
+        });
+        $("#button-popup").click(function(){
+            $("#popup-index").css({"transform" : "scale(0)" , "transition" : "transform 250ms ease-in-out"});
+        });
+        $("#dessinateur").mouseenter(function(){
+            $(this).animate({borderColor : "black"},400);
+            $("#dessinateur h3, #dessinateur p ").animate({color: "black"}, 400);
+        });
+        $("#dessinateur").mouseleave(function(){
+            $(this).animate({borderColor : "#F8C1CF"},400);
+            $("#dessinateur h3, #dessinateur p ").animate({color : "white"}, 400);
+        });
+        $("#client").mouseenter(function(){
+            $(this).animate({borderColor : "black"},400);
+            $("#client h3, #client p ").animate({color: "black"}, 400);
+        });
+        $("#client").mouseleave(function(){
+            $(this).animate({borderColor : "#F8C1CF"},400);
+            $("#client h3, #client p ").animate({color : "white"}, 400);
+        });
+
+    });
+</script>
+
+    <header>
+        <h1> Draw <span> my </span> drawing </h1>
+        <p> " Par ce que de grand projets impliquent constamment la cooperation de plusieurs esprits „ </p>
+    </header>
+
+    <section>
+        <div> <p id="indication"> <span> Qu'est ce que Draw my Drawing ? </span> </p></div>
+        <div id="popup-index">
+            <button id="button-popup" type="button"> X </button>
+            <span> Qu'est ce que Draw my Drawing ? </span>
+            <p> Draw my drawing est un site permettant de mettre en relation des clients avec des artistes
+            afin de crée divers projets autour de l'art du dessin </p>
+        </div>
+         <h2 id="etes-vous"> Etes-vous ? </h2>
+
+        <div id="choix">
+            <div id="dessinateur" class="choix">
+                <h3> Dessinateur  </h3>
+                <p> Vous reherchez à exprimer votre talent artistique et vous voulez
+                réaliser divers projets pour des clients </p>
+            </div>
+
+            <div id="client" class="choix">
+                <h3> Client </h3>
+                <p> Vous avez à l'esprit un projet qui vous tiens à coeur,
+                    prenez contact avec nos dessinateur afin de le rendre concret </p>
+            </div>
+        </div>
+
+        <h2> Nos derniers projets </h2>
+
+        <div id="regroupement-dernier-projets">
+            <div id="dernier-projets-block01">
+                <div class="dernier-projets"></div>
+                <div class="dernier-projets"></div>
+                <div class="dernier-projets"></div>
+                <div class="dernier-projets"></div>
+            </div>
+            <div id="dernier-projets-block02">
+                <div class="dernier-projets"></div>
+                <div class="dernier-projets"></div>
+                <div class="dernier-projets"></div>
+                <div class="dernier-projets"></div>
+            </div>
+        </div>
+
+        <form id="formulaire-dessinateur" method="post" action="#">
+            <label for="mail"> <p> Votre E-mail : </p> </label><input type="email" name="mail" required>
+            <label for="nom"> <p> Votre nom : </p> </label><input type="text" name="nom" required>
+            <label for="prenom"> <p>Votre prenom : </p> </label><input type="text" name="prenom" required>
+            <label for="date"><p> Votre dâte de naissance : </p> </label> <input type="date" name="date" required>
+            <label for="tel"> <p> Votre numeros de téléphone ( joignable ): </p> </label><input type="tel" name="tel">
+            <label for="pseudo"> <p>Votre pseudo : </p> </label><input type="text" name="pseudo" required>
+            <label for="pass"> <p> Votre mot de pass : </p> </label><input type="password" name="pass" required>
+            <input type="submit" value="envoyer">
+        </form>
+    </section>
+
+    <footer>
+        <div>
+            <ul>
+                <li> Qui somme nous ? </li>
+                <li> Nous contacter </li>
+                <li> Faire un don </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

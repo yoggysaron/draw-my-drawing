@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'Amatic';
+    src: url('css/font/AmaticSC-Regular');
+}
+
+html {
+    background-color: white;
+}
+
+/* HEADER */
+
+
+header {
+    background-color: #1C2228;
+}
+
+header h1, p  {
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Amatic';
+    font-size: 2.6em;
+    color: white;
+    padding-top: 1.2em;
+    padding-bottom: 0.2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30em;
+    margin: auto;
+    background-image: url('img/task02.png');
+    background-position-x: 13.2em;
+    background-position-y: 0.5em;
+}
+header h1 span {
+
+    color: black ;
+}
+
+header p {
+    border: none;
+    margin: auto;
+    font-family: 'Amatic';
+    font-size: 2em ;
+    padding-bottom: 1em;
+}
+
+#indication {
+
+    font-family: Amatic;
+    font-size: 2em;
+}
+
+
+/* SECTION */
+
+
+section {
+
+    margin: auto;
+    width: 55em;
+    border: 1px solid black ;
+    background-color: #F8C1CF ;
+}
+body {
+    margin: auto;
+    position: static;
+    border: 1px solid black ;
+    background-image: url('img/pattern04.png');
+    background-size: contain;
+}
+
+section h2 {
+
+    text-align: center;
+    font-family: Amatic;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Amatic';
+    color: white;
+}
+
+#indication {
+    text-align: center;
+    color: black;
+}
+
+#indication span {
+    list-style: none;
+    color: black;
+    cursor: pointer;
+}
+
+#choix {
+
+    display: flex;
+    width: 45em;
+    margin: auto;
+}
+
+#dessinateur {
+
+    border: 1px solid #F8C1CF;
+    width: 20em;
+    height: 20em;
+    margin: 1.5em;
+    background-image: url('img/hand.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+#dessinateur p {
+
+    position: relative;
+    top: 1em;
+    margin: inherit;
+    height: 4em;
+    font-size: 1.5em;
+    font-family: 'Amatic';
+    color: white;
+}
+
+
+#client {
+    border: 1px solid #F8C1CF;
+    width: 20em;
+    height: 20em;
+    margin: 1.5em;
+    background-image: url('img/thinkin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#client p {
+
+    position: relative;
+    top: 1em;
+    height: 4em;
+    margin: inherit;
+    font-size: 1.5em;
+    font-family: 'Amatic';
+    color: white;
+}
+
+#regroupement-dernier-projets {
+
+    width: 100%;
+    border: 1px solid black;
+    height: 18em;
+}
+
+#dernier-projets-block01 {
+
+    display: flex;
+    margin-top: 1em;
+    margin-left: 11em;
+}
+
+#dernier-projets-block02 {
+
+    display: flex;
+    margin-left: 11em;
+}
+
+.dernier-projets {
+
+    width: 8em;
+    height: 8em;
+    border: 1px solid;
+    margin-right: 0.7em;
+    margin-bottom: 0.2em;
+}
+
+
+/* FOOTER */
+
+
+footer div {
+    border: 1px solid black;
+    height: 7em;
+    margin: auto;
+    width: 100%;
+    background-color: #1C2228;
+}
+footer ul {
+
+    float: right;
+    list-style: none;
+    font-family: 'Amatic';
+    color: white;
+    margin-right: 2em;
+    font-size: 1.2em;
+}
+
+/* POP UP INDEX */
+
+#popup-index{
+    width: 32em;
+    height: 21em;
+    background-color: #1C2228;
+    border: 0.2em solid black;
+    position: absolute;
+    top: 34%;
+    right: 30%;
+    z-index: 50;
+    margin: auto;
+    transform: scale(0) ;
+}
+
+#popup-index span{
+
+    font-size: 2em;
+    font-family: Amatic;
+    position: relative;
+    top:0.9em;
+    left:3.6em;
+    color: white;
+    font-weight: bold;
+}
+
+#popup-index p {
+
+    color: white;
+    font-family: Amatic;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 2em;
+}
+
+#button-popup {
+    float: right;
+}
+
+/* FORMULAIRE INSCRIPTION */
+
+#formulaire-dessinateur {
+    position: absolute;
+    width: 20em;
+    height: 15em;
+    border: 1px solid black;
+    top: 10em;
+    color: white;
+    background-color: black;
+}
+
+:required {
+
+    color: red;
+}
