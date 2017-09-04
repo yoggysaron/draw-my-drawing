@@ -33,6 +33,19 @@
             $(this).animate({borderColor : "#F8C1CF"},400);
             $("#client h3, #client p ").animate({color : "white"}, 400);
         });
+        $("#client").click(function(){
+            $("#formulaire-client").css({"transform" : "scale(1)", "transition" : "transform 250ms ease-in-out"});
+        });
+        $("#button-client").click(function(){
+            $("#formulaire-client").css({"transform" : "scale(0)" , "transition" : "transform 250ms ease-in-out"});
+        });
+        $("#dessinateur").click(function(){
+            $("#formulaire-dessinateur").css({"transform" : "scale(1)" , "transition" : "transform 250ms ease-in-out"});
+        });
+        $("#button-dessinateur").click(function(){
+            $("#formulaire-dessinateur").css({"transform" : "scale(0)" , "transition" : "transform 250ms ease-in-out"});
+        });
+
 
     });
 </script>
@@ -84,13 +97,26 @@
         </div>
 
         <form id="formulaire-dessinateur" method="post" action="#">
-            <label for="mail"> <p> Votre E-mail : </p> </label><input type="email" name="mail" required>
-            <label for="nom"> <p> Votre nom : </p> </label><input type="text" name="nom" required>
-            <label for="prenom"> <p>Votre prenom : </p> </label><input type="text" name="prenom" required>
-            <label for="date"><p> Votre dâte de naissance : </p> </label> <input type="date" name="date" required>
-            <label for="tel"> <p> Votre numeros de téléphone ( joignable ): </p> </label><input type="tel" name="tel">
-            <label for="pseudo"> <p>Votre pseudo : </p> </label><input type="text" name="pseudo" required>
-            <label for="pass"> <p> Votre mot de pass : </p> </label><input type="password" name="pass" required>
+            <button id="button-dessinateur" type="button"> X </button>
+            <label for="mail"> <p> Votre E-mail : </p> </label><input type="email" name="mail-dessinateur" required>
+            <label for="nom"> <p> <span id="form-letter-black"> Votre  nom :</span> </p> </label><input type="text" name="nom-dessinateur" required>
+            <label for="prenom"> <p> <span id="form-letter-black">Votre prenom : </span> </p> </label><input type="text" name="prenom-dessinateur" required>
+            <label for="date"><p> <span id="form-letter-black"> Votre dâte de naissance : </span> </p> </label> <input type="date" name="date-dessinateur" required>
+            <label for="tel"> <p> Vot <span id="form-letter-black">re  numeros de téléphone ( joignable ):</span> </p> </label><input type="tel" name="tel-dessinateur">
+            <label for="pseudo"> <p> <span id="form-letter-black">Votre pseudo : </span> </p> </label><input type="text" name="pseudo-dessinateur" required>
+            <label for="pass"> <p> Votre mot de pass : </p> </label><input type="password" name="pass-dessinateur" required>
+            <input type="submit" value="envoyer">
+        </form>
+
+        <form id="formulaire-client" method="post" action="#">
+            <button id="button-client" type="button"> X </button>
+            <label for="mail"> <p> Votre E-mail : </p> </label><input type="email" name="mail-client" required>
+            <label for="nom"> <p> <span id="form-letter-black"> Votre  nom :</span> </p> </label><input type="text" name="nom-client" required>
+            <label for="prenom"> <p> <span id="form-letter-black">Votre prenom : </span> </p> </label><input type="text" name="prenom-client" required>
+            <label for="date"><p> <span id="form-letter-black"> Votre dâte de naissance : </span> </p> </label> <input type="date" name="date-client" required>
+            <label for="tel"> <p> Vot <span id="form-letter-black">re  numeros de téléphone ( joignable ):</span> </p> </label><input type="tel" name="tel-client">
+            <label for="pseudo"> <p> <span id="form-letter-black">Votre pseudo : </span> </p> </label><input type="text" name="pseudo-client" required>
+            <label for="pass"> <p> Votre mot de pass : </p> </label><input type="password" name="pass-client" required>
             <input type="submit" value="envoyer">
         </form>
     </section>

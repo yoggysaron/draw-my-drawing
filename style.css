@@ -242,17 +242,70 @@ footer ul {
 
 /* FORMULAIRE INSCRIPTION */
 
+
+
+
+#button-dessinateur {
+    float: right;
+}
+
 #formulaire-dessinateur {
     position: absolute;
-    width: 20em;
-    height: 15em;
+    width: 29em;
+    height: auto;
     border: 1px solid black;
-    top: 10em;
+    top: 14em;
+    left: 0em;
     color: white;
-    background-color: black;
+    background-color: #1C2228;
+    font-family: Amatic;
+    background-image: url('img/task02.png');
+    background-position-y: -3.1em;
+    background-position-x: -4.1em;
+    background-size: 35em;
+    font-size: 1.1em;
+    transform: scale(0);
+}
+
+#form-letter-black {
+    color: black;
+}
+
+input {
+    position: relative;
+    left: 13em ;
 }
 
 :required {
 
     color: red;
+}
+
+#button-client {
+    float: right;
+}
+
+#formulaire-client {
+    position: absolute;
+    width: 29em;
+    height: auto;
+    border: 1px solid black;
+    top: 14em;
+    right: 0em;
+    color: white;
+    background-color: #1C2228;
+    font-family: Amatic;
+    background-image: url('img/task02.png');
+    background-position-y: -3.1em;
+    background-position-x: -4.1em;
+    background-size: 35em;
+    font-size: 1.1em;
+    transform: scale(0);
+}
+
+/* FOOTER */
+
+footer li {
+
+    cursor: pointer;
 }
